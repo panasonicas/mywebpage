@@ -11,6 +11,26 @@ tns({
     navPosition: 'bottom',
     autoplay: true,
     mouseDrag:true,
+       responsive: {
+      1000: {
+        items: 4
+      },
+      900: {    
+        items: 4
+      },
+      800: {    
+        items: 3
+      },
+      700: {
+        items: 3
+      },
+      590: {
+        items: 2
+      },
+      200: {
+        items: 2
+      }
+    }
 });
     
 //---------ALL SETTINGS FOR TINY SLIDER----------
