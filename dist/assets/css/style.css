@@ -16,7 +16,7 @@ body{
 
 .hero-container{
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -24,11 +24,11 @@ body{
 }
 .hero-text-container{
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 }
 .hero-heading{
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 }
 h1, h2{
 	margin:0;
@@ -50,7 +50,7 @@ p .label:after {
 }
 .hero-para{
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 	padding-bottom: 30px;
 }
 
@@ -95,7 +95,7 @@ p{
 }
 .second-container{
 	margin: 0 auto;
-	width: 1170px;
+	max-width: 1170px;
 	text-align: center;
 	padding: 90px 110px;
 }
@@ -114,9 +114,10 @@ p{
 	padding-bottom:120px;
 }
 .projects-container{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-bottom: 85px;
 }
@@ -151,9 +152,10 @@ p{
 	
 }
 .proud-container{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	display:flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-bottom: 90px;
 }
@@ -184,7 +186,7 @@ p{
 	padding-bottom: 120px;
 }
 .works-so-far-container{
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 }
 .works-so-far-container h2{
@@ -201,6 +203,7 @@ p{
 	width:66.66%;
 	margin:0 auto;
 	display: flex;
+	flex-wrap:wrap;
 	justify-content: space-between;
 }
 .works-buttons-container a{
@@ -330,7 +333,7 @@ Experimental order type - working only in gallery-second (container)
 }
 
 .tns-outer{
-	width:1170px;
+	max-width:1170px;
 	margin: 0 auto;
 }
 .tns-outer button{
@@ -515,4 +518,86 @@ input[type="submit"]:hover{
 .footer-container a i:hover{
 	color: #ffce00;
 	font-size: 1.18rem ;
+}
+
+@media all and (max-width: 1000px){
+
+	h1, h2{
+		font-size: 6rem;
+	}
+	.hero-container{
+		width:90%;
+		padding-left:0;
+		padding-right:0;
+	}
+	.hero-heading, .hero-para, .hero-button, .projects-container, .proud-container, .works-so-far-container,
+	.gallery-container, .clients-container, .contact-container, .contacts-container {
+		width:90%;
+		margin: 0 auto;
+	}
+	.second-container{
+		padding: 90px 70px;
+	}
+	.projects-column{
+		width:100%;
+		margin-bottom: 30px;
+	}
+	.proud-column{
+		width:50%;
+		margin-bottom:30px;
+	}
+	.proud{
+		padding-top:90px;
+	}
+	.works-buttons-container, .gallery-first, .gallery{
+		width:100%;
+		justify-content: center;
+	}
+	.gallery-first{
+		padding:0;
+		width:100%;
+		margin-bottom: 20px;
+		height:400px;
+	}
+	.works-buttons-container a{
+		margin: 5px 10px;
+	}
+	.gallery-container{
+		flex-wrap: wrap;
+		height: auto;
+	}
+	.gallery-second{
+		width: 100%;
+		height:800px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.left-image, .right-image, .bottom-midle-image, .bottom-right-image{
+		padding:0;
+		width: 48%;
+	}
+	.bottom-left-image{
+		width:100%;
+		padding:0;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	.imgs4{
+		background-position: top;
+	}
+	.contact-column{
+		width:100%;
+		margin-left:0;
+		margin-bottom: 30px;
+	}
+	.contact-column:last-child{
+		margin-bottom: 0px;
+	}
+	.contacts-container{
+		flex-wrap: wrap;
+	}
+
+
+
+
 }
